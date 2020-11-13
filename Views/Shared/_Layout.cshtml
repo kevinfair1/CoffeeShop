@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Coffee Shop</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="~/css/site.css" />
+    <script src="https://kit.fontawesome.com/7bc741ea66.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <style>
+    </style>
+</head>
+<body>    
+    
+
+    <div class="navbar">
+        <div class="navlogo"> </div>
+        <a asp-controller="Home" asp-action="Index"><i class="fa fa-fw fa-home" ></i>Home</a>    
+     
+    <div class="dropdown">
+        <button class="dropbtn"><i class="fas fa-mug-hot" style="vertical-align: middle;"></i>Menu</button>
+            <d iv class="dropdown-content">
+                <div class="linkStyle">
+                      <a asp-controller="Product" asp-action="Cappucino"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c0/Capuccino_Italy.jpg" alt="Cappucino" style="width: 80px; height: 80px;" /></a>
+                   <div class="linkWrap "><a asp-controller="Product" asp-action="Cappucino">Cappucino </a>
+                      <div>Frappe and cappuccino, an espresso with frothed milk. Sweet and Delicious! <br /><span style="color: green; font-weight: bold; font-size: .9rem; ">S-$6.99 M-$8.99 L-$9.99</span>
+                      </div>
+                   </div>                    
+                </div>
+                <div class="linkStyle">
+                    <a asp-controller="Product" asp-action="Espresso"><img src="https://www.dailygrind.com/wp-content/uploads/2018/11/espresso-1.jpg" alt="Espresso" style="width: 80px; height: 80px;" /></a>
+                    <div class="linkWrap ">
+                        <a asp-controller="Product" asp-action="Espresso">Espresso</a>
+                        <div> 
+                            Made the Italian way! A quick shot of energy to get you going right! <br /><span style="color: green; font-weight: bold; font-size: .9rem; ">S-$4.99 M-$6.99 L-$7.99</span>
+                        </div>
+                    </div>
+                </div> 
+                <div class="linkStyle">
+                    <a asp-controller="Product" asp-action="Latte"><img src="https://www.torani.com/sites/default/files/styles/torani_syrup_recipe_detail/public/recipes/illustration/iced%20latte%20with%20swirl.jpg" alt="Latte" style="width: 80px; height: 80px;" /></a>
+                    <div class="linkWrap "> 
+                        <a asp-controller="Product" asp-action="Latte">Iced Latte</a>
+                        <div>
+                            Made with espresso and steamed milk, a classic take on one of your favorites! <br /><span style="color: green; font-weight: bold; font-size: .9rem; ">S-$3.99 M-$4.99 L-$5.99</span>
+                        </div>
+                    </div>
+                </div>  
+    </div>
+        <div id="headTitle">
+            Kevin's Cafe Coffee
+        </div>
+</div>
+         
+              
+
+    <div class="row">
+        <div class="column side">*Under Construction* More content to be added later.</div>        
+        <div class="column middle">            
+            @RenderBody()
+        </div>
+            
+        
+    </div>
+
+    <div class="footer"> 
+        <p>Kevin's coffee shop is a trademark of Kevin. All products are of my own design.</p>
+    </div>
+   
+</body>
+</html>

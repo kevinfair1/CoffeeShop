@@ -1,0 +1,229 @@
+﻿ 
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background-color: black;
+}
+body {
+    font-family: sans-serif, Arial, Helvetica;    
+}
+
+.navbar {
+    width: 100%;
+    background-color: #999999;    
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    z-index: 1;
+}
+
+i {  
+    margin-right: 10px;
+    vertical-align: middle;
+    font-size: 20px;
+    color: #45230f;
+}
+
+.navlogo {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    background-image: url(https://i.ibb.co/GtNtrXb/coffeelogo.jpg);
+    background-repeat: no-repeat;
+    background-size: 100px 100px;
+    border-radius: 50px;
+    margin: 5px 20px 5px 5px;
+}
+
+    .navbar a {
+        float: left; 
+        padding: 12px;
+        color: #333;
+        font-family: Verdana;
+        font-weight: bold; 
+        text-decoration: none;
+        width: 150px; 
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        vertical-align: middle; 
+        font-size: 20px;
+    }
+
+        .navbar a:hover {
+            color: #955f31;
+        }
+
+.active {
+    background-color: #d7b787;
+}
+
+.dropbtn {
+    background-color: #999999;
+    color: #333;
+    width: 175px;
+    height: 30px;
+    font-family: Verdana;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+ 
+.dropdown {
+    position: relative;
+    display: inline-block;
+    z-index: 500;     
+   
+}
+
+.linkStyle {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid;
+    border-color: #333;
+    border-radius: 10px;
+}
+
+.linkWrap {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: Tahoma;
+    font-size: 0.75rem;
+    padding: 5px;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute; 
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);    
+    z-index: 9999;
+}
+
+    
+    .dropdown-content:first-child {
+        color: green;
+        width: 400px;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        margin: 0px 0px 5px 0px;
+    }
+
+         
+        .dropdown-content:first-child :hover {
+            background-color: #aaa7a2;
+        }
+
+
+.dropdown:hover .dropdown-content {
+    display: block;    
+}
+
+
+.dropdown:hover .dropbtn {
+    color: #955f31;
+}
+
+
+
+/* Style the header */
+.header {
+    background-color: #f1f1f1;
+    padding: 25px;
+    text-align: center;
+    font-size: 35px;
+}
+
+/* Container for flexboxes */
+.row {
+    display: flex;
+    flex: 10% 80%;
+} 
+
+.column {
+    padding: 10px;
+    height: 800px; 
+    flex: 10% 80%; 
+} 
+
+   
+    .column.side {       
+        width:10%;       
+        background-color: #333;
+        color: white;
+    }
+
+    
+    .column.middle {
+        width: 90%;
+        background-image: url(https://st.depositphotos.com/2632165/3063/i/450/depositphotos_30638835-stock-photo-coffee.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    } 
+        
+
+
+.footer {
+    background-color: #999999 ;
+    padding: 10px;
+    display:flex; 
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+
+ 
+@media (max-width: 600px) { 
+    .row {
+        -webkit-flex-direction: column;
+        flex-direction: column;
+    }
+}
+
+#viewHeader {
+    font-size: 3rem;
+    font-family: 'Dancing Script', cursive;
+    color: #aaa7a2;
+}
+ 
+#viewDiv {
+    display: flex;
+    padding: 5px;
+    margin: 0px 10px 0px 10px;
+}
+
+#description {
+    font-size: 1.5rem;
+    font-family: Arial;
+    color : white;
+    padding: 10px;
+}
+
+li {
+    font-size: 1rem;
+    margin: 2.5px 0px 2.5px 0px;
+}
+
+#headTitle {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 800px;
+    font-size:  5rem;
+    color: #45230f;
+    font-family: 'Dancing Script', cursive;
+}
